@@ -41,7 +41,7 @@ padding-bottom: 5%;
     color: aliceblue;
 }
 .left a:hover {
-    border-bottom: 3px solid #D86018;
+    border-bottom: 3px solid #FF8F1C;
 }
 .right{
     padding-right: 55px;
@@ -49,7 +49,7 @@ padding-bottom: 5%;
 .right button{
     padding: 6px;
     color: aliceblue;
-    background-color: #D86018;
+    background-color: #FF8F1C;
     cursor: pointer;
     border-radius: 6px;
     font-size: 18px;
@@ -124,7 +124,7 @@ padding-bottom: 5%;
     height: 44px;
     width: 18%;
     color: aliceblue;
-    background-color: #D86018;
+    background-color: #FF8F1C;
     border: 1px solid transparent;
     cursor: pointer;
     font-size: 15px;
@@ -174,7 +174,7 @@ padding-bottom: 5%;
 .btnCreditButton{
     padding: 6px;
     color: aliceblue;
-    background-color: #D86018;
+    background-color: #FF8F1C;
     cursor: pointer;
     border: 1px solid transparent;
     border-radius: 4px;
@@ -451,7 +451,7 @@ padding-bottom: 5%;
 }
 .socialMedia{
     display: flex;
-    background-color: #D86018;
+    background-color: #FF8F1C;
     width: 100%;
     justify-content: space-between;
     align-items: center;
@@ -475,6 +475,11 @@ padding-bottom: 5%;
     padding-right: 18px;
     font-size: 55px;
     font-family: Icons Social Media;
+    opacity: 0.7;
+}
+
+.Icon:hover{
+    opacity: 1;
 }
 @media only screen and (max-width: 1120px){
     .socialMedia{
@@ -495,14 +500,74 @@ padding-bottom: 5%;
 }
 /* footer */
 .footer{
+    width: 98%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 3%;
+}
+.footerSection{
+    color: #3E2B2E;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.footerSectionContainer div{
+    color: #2097f2;
+    cursor: pointer;
+    line-height: 22px;
+}
+.footerSectionContainer div:hover{
+    color: #003D4C;
 }
 .footerLogo{
     padding-top: 1%;
 }
 .footerImg{
+    padding-bottom: 15px;
     padding-left: 40px;
     width: 125px;
     height: 41px;
+}
+.footerLogoText{
+    padding-left: 40px;
+    width: 188px;
+}
+@media only screen and (max-width: 1120px){
+    .footer{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+    .containerFooter{
+        text-align: center;
+    }
+    .footerImg{
+        padding-left: 41px;
+    }
+    .footerLogoText{
+        padding-left: 11px;
+        text-align: center;
+    }
+    .footerLogo{
+        padding-top: 6%;
+        padding-bottom: 10%;
+    }
+}
+/* Privacity */
+.privacity{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2%;
+}
+.privacityMessage{
+    color: #3E2B2E;
+    text-align: center;
+    font-size: 13px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 1120px){
+    .privacity{
+        padding-top: 5%;
+        padding-bottom: 8%;
+    }
 }

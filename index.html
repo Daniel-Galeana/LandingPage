@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="”shortcut" icon” href="”%PUBLIC_URL%/favicon.ico”">
-    <title>Tu Canton</title>
+    <link rel="shortcut icon" href="images/home.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" href="CSS/styles.css">
+    <title>Tu Canton</title>
 </head>
 <body>
     <div class="container-head">
@@ -124,6 +125,46 @@
             </div>
         </div>
     </div>
+    <!-- Boostrap -->
+    <div class="ContacUs">Contactanos</div>
+    <form onsubmit="return send()" class="row g-3 needs-validation, contactContainer">
+        <div class="col-md-4">
+          <label class="form-label">Nombre</label>
+          <label class="labelError" id="labelError1"></label>
+          <input id="name_f" type="text" class="form-control"  placeholder="Daniel">
+        </div>
+        <div class="col-md-4">
+          <label class="form-label">Celular</label>
+          <label class="labelError" id="labelError2"></label>
+          <input id="phoneNumber" type="tel" class="form-control" placeholder="5514162519" required size="10" minlength="10" maxlength="10">
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Email</label>
+            <label class="labelError" id="labelError3"></label>
+            <span id="span"></span>
+            <input id="email" type="email" class="form-control" placeholder="example@gmail.com">
+            
+          </div>
+        <div class="col-md-3">
+          <label for="validationCustom04" class="form-label">Tipo_servicio</label>
+          <label class="labelError" id="labelError4"></label>
+          <select id="service" class="form-select">
+            <option selected disabled value="">Selecciona...</option>
+            <option>Vender mi casa</option>
+            <option>Comprar una casa</option>
+            <option>Solo quiero informarme</option>
+            <option>Estoy buscando opciones</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+            <label class="form-label">Registro</label>
+            <input readonly type="text" class="form-control" value="Website">
+          </div>
+        <div class="col-12">
+          <button id="btnSubmit" class="btn btn-primary" type="submit">Enviar</button>
+        </div>
+      </form>
+    <!-- Fin de Boostrap-->
     <div class="socialMedia">
         <div class="socialMediaText">Visita nuestras redes sociales</div>
         <div class="socialMediaIcons">
@@ -176,5 +217,8 @@
             © Tu Cantón 2020. Todos los derechos reservados.
         </div>
     </div>
+    <script src="js/scrips.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

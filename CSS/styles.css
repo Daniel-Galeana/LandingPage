@@ -472,6 +472,8 @@ padding-bottom: 5%;
 .iconsContainer{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
 }
 .Icon{
     cursor: pointer;
